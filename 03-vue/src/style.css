@@ -1,0 +1,99 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	font-family: system-ui, sans-serif;
+	background: #f0fdf4;
+	color: #262626;
+}
+.topo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 16px 24px;
+	background: #15803d;
+	color: #fff;
+}
+.topo p {
+	margin: 0;
+}
+.marca {
+	font-size: 20px;
+	font-weight: 700;
+}
+.secao {
+	max-width: 768px;
+	margin: 0 auto;
+	padding: 32px 16px;
+	text-align: center;
+}
+h1 {
+	font-size: 36px;
+	font-weight: 500;
+	line-height: 1.2;
+	margin: 0;
+}
+h2 {
+	font-size: 24px;
+	font-weight: 500;
+	margin: 0 0 16px;
+}
+.grade {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: grid;
+	gap: 16px;
+}
+.card {
+	background: #fff;
+	border: 1px solid #bbf7d0;
+	border-radius: 8px;
+	padding: 16px;
+}
+.card h3 {
+	margin: 0 0 4px;
+	font-size: 20px;
+}
+.card p {
+	margin: 0 0 12px;
+	font-size: 18px;
+}
+button {
+	cursor: pointer;
+	border: 0;
+	border-radius: 6px;
+	padding: 8px 16px;
+	background: #15803d;
+	color: #fff;
+	font-weight: 500;
+}
+button:hover {
+	background: #166534;
+}
+.resumo {
+	margin: 24px 0 8px;
+	font-size: 18px;
+	font-weight: 700;
+}
+.rodape {
+	padding: 24px;
+	text-align: center;
+	font-size: 14px;
+	background: #262626;
+	color: #d4d4d4;
+}
+@media (min-width: 640px) {
+	.grade {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media (min-width: 1024px) {
+	.grade {
+		grid-template-columns: repeat(3, 1fr);
+	}
+	h1 {
+		font-size: 60px;
+	}
+}

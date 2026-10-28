@@ -1,0 +1,5 @@
+<article class="card">
+  <h3>{{ item().nome }}</h3>
+  <p>R$ {{ item().preco | number: '1.2-2' }}</p>
+  <button (click)="adicionar.emit(item())">Adicionar</button>
+</article>

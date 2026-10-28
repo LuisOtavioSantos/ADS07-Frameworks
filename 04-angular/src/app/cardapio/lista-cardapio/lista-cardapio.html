@@ -1,0 +1,12 @@
+<h2>Cardápio</h2>
+<ul class="grade">
+  @for (item of cardapio.itens; track item.id) {
+    <li>
+      <app-item-cardapio [item]="item" (adicionar)="cardapio.adicionar($event)" />
+    </li>
+  }
+</ul>
+<p class="resumo">
+  {{ cardapio.quantidade() }} item(ns) · Total: R$ {{ cardapio.total() | number: '1.2-2' }}
+</p>
+<button (click)="cardapio.limpar()">Limpar pedido</button>

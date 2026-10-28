@@ -1,0 +1,20 @@
+<main class="pagina-contexto">
+  <h1>Contexto no Angular</h1>
+  <p class="intro">Os dois cardápios fazem a mesma coisa. Muda o caminho que o pedido percorre.</p>
+
+  <section class="comparacao">
+    <article class="bloco bloco-sem">
+      <h2>Sem contexto</h2>
+      <p class="caminho">ItemCardapio → ListaSemContexto → CardapioSemContexto: o output sobe repassado.</p>
+      <app-cardapio-sem-contexto />
+    </article>
+
+    <article class="bloco bloco-com">
+      <h2>Com contexto (injeção de dependência)</h2>
+      <p class="caminho">CardapioComContexto declara o serviço em providers; ItemComContexto e ResumoComContexto fazem inject.</p>
+      <app-cardapio-com-contexto />
+    </article>
+  </section>
+
+  <a class="voltar" href="/">Voltar ao cardápio principal</a>
+</main>

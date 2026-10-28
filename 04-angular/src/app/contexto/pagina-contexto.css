@@ -1,0 +1,13 @@
+.pagina-contexto { max-width: 1152px; margin: 0 auto; padding: 32px 16px; text-align: center; }
+.intro { margin: 8px 0 24px; }
+.comparacao { display: grid; gap: 24px; }
+.bloco { border-radius: 8px; padding: 16px; }
+.bloco-sem { border: 2px dashed #9ca3af; }
+.bloco-com { border: 2px solid #b91c1c; }
+.caminho { font-size: 14px; margin: 0 0 16px; }
+.grade-meia { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+.botao-borda { background: transparent; color: #991b1b; border: 1px solid #b91c1c; }
+.botao-borda:hover { background: #fee2e2; }
+.voltar { display: inline-block; margin-top: 32px; color: #991b1b; }
+@media (min-width: 640px) { .grade-meia { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .comparacao { grid-template-columns: 1fr 1fr; } }
